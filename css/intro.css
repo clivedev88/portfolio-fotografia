@@ -1,0 +1,137 @@
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #e7e3f5;
+    color: #333;
+}
+
+.intro-content {
+    max-width: 40%;
+}
+
+.subtitle {
+    color: #6e6b99;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.intro-content h1 {
+    font-size: 5rem;
+    color: #4a4a8a;
+    margin: 0.5rem 0;
+}
+
+.description {
+    color: #666;
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.buttons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.primary-button, .secondary-button {
+    padding: 0.85rem 1.75rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 1s, color 1s;
+}
+
+.primary-button {
+    background-color: #4a4a8a;
+    color: white;
+    border: none;
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: #4a4a8a;
+    border: 1px solid #4a4a8a;
+}
+
+.primary-button:hover {
+    background-color: white;
+    color: #4a4a8a;
+    border: 1px solid #4a4a8a;
+}
+
+.secondary-button:hover {
+    background-color: #4a4a8a;
+    color: white;
+    border: none;
+}
+
+.primary-button:hover, .secondary-button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.client-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.happy-clients {
+    font-size: 1.5rem;
+    color: #4a4a8a;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.8rem;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    transition: color 1s;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #4a4a8a; 
+    transition: color 0.5s;
+}
+
+.social-icons a:hover .fa-behance {
+    color: #1769ff; 
+}
+
+.social-icons a:hover .fa-x-twitter {
+    color: #1DA1F2; 
+}
+
+.social-icons a:hover .fa-tiktok {
+    color: #000000; 
+}
+
+.social-icons a:hover .fa-instagram {
+    color: #E1306C; 
+}
+
+.intro-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
