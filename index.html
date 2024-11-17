@@ -1,345 +1,293 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - João Silva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
     <link rel="stylesheet" href="css/contato.css">
-    <link rel="stylesheet" href="css/extras.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/precos.css">
     <link rel="stylesheet" href="css/sobre.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
+ 
+    
     <header>
-        <div class="section">
+        <div id="cabecalho" class="section">
             <div class="logo">
-                <a href="#home"><span class="name-dark">João</span> <span class="name-light">Silva</span></a>
+                <a href="home">João Silva</a>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#portfolio">Portfólio</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#pricing-and-testimonials">Preços</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="portfolio">Portfólio</a></li>
+                    <li><a href="about">Sobre</a></li>
+                    <li><a href="planos">Planos</a></li>
+                    <li><a href="contact">Contato</a></li>
                 </ul>
             </nav>
             
         </div>
     </header>
 
-    <!-- SEÇÃO INICIAL -->
-    <section id="home" class="intro-section section">
-        <div class="intro-content">
-            <p class="subtitle">Fotógrafo Profissional</p>
-            <h1>João Silva</h1>
-            <p class="description">João Silva é um fotógrafo talentoso e apaixonado, especializado em capturar momentos inesquecíveis e transformá-los em memórias eternas. Com um olhar atento para detalhes e uma abordagem artística, ele oferece serviços de fotografia para eventos, retratos e projetos comerciais.</p>
-            <div class="buttons">
-                <div class="buttons">
-                    <button id="contactButton" class="primary-button">Vamos bater um papo</button>
-                    <button id="portfolioButton" class="secondary-button">Minhas Obras</button>
+
+    <main>
+        <section id="home" class="section">
+            <div id="intro">
+                <p id="sub-titulo">Fotógrafo Profissional</p>
+
+                <h1>João Silva</h1>
+                
+                <p id="descricao">João Silva é um fotógrafo talentoso e apaixonado, especializado em capturar momentos inesquecíveis e transformá-los em memórias eternas. Com um olhar atento para detalhes e uma abordagem artística, ele oferece serviços de fotografia para eventos, retratos e projetos comerciais.</p>
+                
+                <div id="buttons">
+                    <!-- <div class="buttons"> -->
+                        <button id="contato-btn">Vamos bater um papo</button>
+                        <button id="portfolio-btn">Minhas Obras</button>
+                    <!-- </div> -->
+                    
                 </div>
                 
-            </div>
-            <div class="client-info">
-                <img src="imagens/cliente1.jpeg" alt="Client 1" class="client-img">
-                <img src="imagens/cliente2.jpeg" alt="Client 2" class="client-img">
-                <img src="imagens/cliente3.jpeg" alt="Client 3" class="client-img">
-                <span class="happy-clients">500+ Clientes Satisfeitos</span>
-            </div>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-behance"></i></a>
-                <a href="#"><i class="fab fa-x"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-        <div class="intro-image">
-            <img src="imagens/Perfil.png" alt="João Silva">
-        </div>
-    </section>
-
-    <!-- PORTFÓLIO -->
-    <section id="portfolio" class="portfolio-section section">
-        <h1>Confira alguns dos meus trabalhos favoritos.</h1>
-        <p><BR></BR></p>
-        <!-- <p>Confira alguns dos meus trabalhos favoritos.</p> -->
-        <div class="carousel-container">
-            <div class="portfolio-carousel">
-                <!-- Primeira sequência de imagens -->
-                <div class="portfolio-item">
-                    <img src="imagens/casamento.jpeg" alt="Fotografia de casamento capturando um momento romântico">
-                    <h3>Casamentos</h3>
-                    <div class="overlay">Capturando o amor e a emoção do seu grande dia.</div>
+                <div id="info-cliente">
+                    <img src="imagens/cliente1.jpeg" alt="Client 1" class="img-cliente">
+                    <img src="imagens/cliente2.jpeg" alt="Client 2" class="img-cliente">
+                    <img src="imagens/cliente3.jpeg" alt="Client 3" class="img-cliente">
+                    <span id="clientes">500+ Clientes Satisfeitos</span>
                 </div>
-                <div class="portfolio-item">
-                    <img src="imagens/retratos.jpeg" alt="Retratos">
-                    <h3>Retratos</h3>
-                    <div class="overlay">Ensaio fotográfico que revela a sua essência.</div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="imagens/eventos corporativos 2.jpg" alt="Eventos Corporativos">
-                    <h3>Eventos Corporativos</h3>
-                    <div class="overlay">Fotos profissionais que destacam o seu evento.</div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="imagens/festa de aniversario.jpg" alt="Aniversários">
-                    <h3>Aniversários</h3>
-                    <div class="overlay">Memórias inesquecíveis de momentos especiais.</div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="imagens/book pessoal.jpg" alt="Book Pessoal">
-                    <h3>Book Pessoal</h3>
-                    <div class="overlay">Ensaio fotográfico exclusivo para registrar sua personalidade.</div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="imagens/fotografia comercial.jpg" alt="Fotografia Comercial">
-                    <h3>Fotografia Comercial</h3>
-                    <div class="overlay">Imagens de alta qualidade para o seu negócio.</div>
-                </div>
-    
-                <!-- sEGUNDA sequência de imagens -->
-                <div class="portfolio-item">
-                    <img src="imagens/casamento.jpeg" alt="Casamentos">
-                    <h3>Casamentos</h3>
-                    <div class="overlay">Capturando o amor e a emoção do seu grande dia.</div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="imagens/retratos.jpeg" alt="Retratos">
-                    <h3>Retratos</h3>
-                    <div class="overlay">Ensaio fotográfico que revela a sua essência.</div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="imagens/eventos corporativos 2.jpg" alt="Eventos Corporativos">
-                    <h3>Eventos Corporativos</h3>
-                    <div class="overlay">Fotos profissionais que destacam o seu evento.</div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="imagens/festa de aniversario.jpg" alt="Aniversários">
-                    <h3>Aniversários</h3>
-                    <div class="overlay">Memórias inesquecíveis de momentos especiais.</div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="imagens/book pessoal.jpg" alt="Book Pessoal">
-                    <h3>Book Pessoal</h3>
-                    <div class="overlay">Ensaio fotográfico exclusivo para registrar sua personalidade.</div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="imagens/fotografia comercial.jpg" alt="Fotografia Comercial">
-                    <h3>Fotografia Comercial</h3>
-                    <div class="overlay">Imagens de alta qualidade para o seu negócio.</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-        <!-- Popup de Contato -->
-    <div class="contact-popup" id="contactPopup">
-        <div class="popup-content">
-            <span class="close-popup" onclick="toggleContactPopup()">&times;</span>
-            <h3>Entre em Contato</h3>
-            <form>
-                <input type="text" name="name" placeholder="Seu Nome" required>
-                <input type="email" name="email" placeholder="Seu Email" required>
-                <input type="text" name="phone" placeholder="Número de Contato" required>
-                <input type="text" name="subject" placeholder="Assunto" required>
-                <textarea name="message" placeholder="Qual a natureza do seu serviço...?" required></textarea>
-                <button type="submit">Enviar Mensagem<i class="fas fa-paper-plane"></i></button>
-            </form>
-        </div>
-    </div>
-
-
-
-    
-    <section id="about" class="about-section section">
-        <!-- <h2>Sobre Mim</h2> -->
-        <h2>Quem é João Silva?</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>Olá, sou <strong>João Silva</strong>, um fotógrafo apaixonado por capturar histórias <strong>autênticas</strong> e <strong>emocionantes</strong>. Desde cedo, a fotografia sempre foi minha paixão, e transformei esse amor em uma carreira onde cada clique busca <strong>imortalizar memórias</strong> únicas e criar algo inesquecível.</p>
-                <p>Com vários anos de experiência, já trabalhei com clientes de todos os perfis, desde <strong>casamentos íntimos</strong> a <strong>grandes eventos corporativos</strong>. Acredito que a fotografia é uma forma de arte que revela a essência de cada momento e expressão.</p>
-                <p>Minhas fotografias são inspiradas pela natureza, pela autenticidade de cada pessoa e pela história que cada cliente quer contar. Busco capturar os <strong>pequenos detalhes</strong> e criar um ambiente onde cada cliente se sinta confortável e autêntico diante da câmera.</p>
-                <p>Para mim, a fotografia é uma arte que está sempre em evolução. Estou constantemente aprendendo novas técnicas e explorando novas perspectivas para oferecer o <strong>melhor resultado</strong> em cada projeto.</p>
-            </div>
-            <div class="about-image">
-                <img src="imagens/sobre-mim.jpg" alt="João Silva">
-            </div>
-        </div>
-    </section>
-
-    <section id="pricing-and-testimonials" class="combined-section">
-        <div class="pricing-section">
-            <h2>Escolha o Plano Ideal para Você</h2>
-            <div class="pricing-container">
-                <div class="pricing-card">
-                    <h3>Básico</h3>
-                    <p><strong>R$ 800</strong></p>
-                    <ul>
-                        <li>2 horas de sessão fotográfica</li>
-                        <li>10 fotos editadas em alta resolução</li>
-                        <li>Galeria online para download</li>
-                    </ul>
-                </div>
-                <div class="pricing-card">
-                    <h3>Intermediário</h3>
-                    <p><strong>R$ 1.500</strong></p>
-                    <ul>
-                        <li>4 horas de sessão fotográfica</li>
-                        <li>20 fotos editadas em alta resolução</li>
-                        <li>Álbum fotográfico impresso</li>
-                        <li>Galeria online para download</li>
-                    </ul>
-                </div>
-                <div class="pricing-card">
-                    <h3>Completo</h3>
-                    <p><strong>R$ 3.500</strong></p>
-                    <ul>
-                        <li>Sessão fotográfica ilimitada (duração do evento)</li>
-                        <li>50 fotos editadas em alta resolução</li>
-                        <li>Álbum fotográfico premium</li>
-                        <li>Galeria online para download</li>
-                        <li>DVD com todas as fotos</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
                 
-        <div class="testimonials-section">
-            <h2>Depoimentos de Clientes Satisfeitos</h2>
-            <div class="testimonials-carousel-container">
-                <div class="testimonials-carousel">
-                    <div class="testimonial-item">
-                        <img src="imagens/cliente1.jpeg" alt="Foto de Maria F.">
-                        <h4>Maria F.</h4>
-                        <p>"As fotos do meu casamento ficaram incríveis! João capturou cada momento especial. Recomendo!"</p>
-                    </div>
-                    <div class="testimonial-item">
-                        <img src="imagens/cliente2.jpeg" alt="Foto de Carlos S.">
-                        <h4>Carlos S.</h4>
-                        <p>"João fez um trabalho maravilhoso com as fotos da minha empresa. Elas ficaram profissionais e elegantes."</p>
-                    </div>
-                    <div class="testimonial-item">
-                        <img src="imagens/cliente3.jpeg" alt="Foto de Ana P.">
-                        <h4>Ana P.</h4>
-                        <p>"Adorei as fotos do meu aniversário! João tem um olhar único para detalhes."</p>
-                    </div>
-                    <div class="testimonial-item">
-                        <img src="imagens/cliente4.jpeg" alt="Foto de Roberto M.">
-                        <h4>Roberto M.</h4>
-                        <p>"Nunca me senti tão à vontade em uma sessão de fotos. João é muito profissional e talentoso."</p>
-                    </div>
-                    <div class="testimonial-item">
-                        <img src="imagens/cliente5.jpeg" alt="Foto de Elisa G.">
-                        <h4>Elisa G.</h4>
-                        <p>"As fotos da minha família ficaram perfeitas. Um trabalho impecável!"</p>
-                    </div>
-                    <div class="testimonial-item">
-                        <img src="imagens/cliente6.jpeg" alt="Foto de Bruno T.">
-                        <h4>Bruno T.</h4>
-                        <p>"João capturou a essência do nosso evento. As fotos ficaram lindas!"</p>
-                    </div>
-                    <div class="testimonial-item">
-                        <img src="imagens/cliente7.jpg" alt="Foto de Camila R.">
-                        <h4>Camila R.</h4>
-                        <p>"Estou encantada com as fotos do meu ensaio. Elas são verdadeiras obras de arte!"</p>
-                    </div>
-                    <div class="testimonial-item">
-                        <img src="imagens/cliente8.jpg" alt="Foto de Fernanda L.">
-                        <h4>Fernanda L.</h4>
-                        <p>"Excelente fotógrafo! João conseguiu captar exatamente o que eu queria."</p>
-                    </div>    
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                    <a href="#"><i class="fas fa-x"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-        </div>
-    </section>    
-
-    
-    <section id="contact" class="contact-section">
-        <div class="contact-info">
-            <h2>Vamos Conversar?</h2>
-            <p>Entre em contato através do formulário abaixo e acompanhe meu trabalho nas redes sociais para ver os últimos projetos e novidades.</p>
-            
-                <!-- Primeira sequência de imagens -->
-
-            <div class="social-carousel">
-                <ul class="social-links">
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                    <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                </ul>
+            <div id="perfil">
+                <img src="imagens/Perfil.png" alt="João Silva">
             </div>
-        </div>
+        </section>
+    
+
+        <section id="portfolio" class="section">
+            <h1>Confira alguns dos meus trabalhos favoritos.</h1>
+            <p><BR></BR></p>
+            <!-- <p>Confira alguns dos meus trabalhos favoritos.</p> -->
+            <div id="container-carrossel">
+                <div id="carrossel-portfolio">
+                    <!-- Primeira sequência de imagens -->
+                    <div class="portfolio-item">
+                        <img src="imagens/casamento.jpeg" alt="Fotografia de casamento capturando um momento romântico">
+                        <h3>Casamentos</h3>
+                        <div class="overlay">Capturando o amor e a emoção do seu grande dia.</div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="imagens/retratos.jpeg" alt="Retratos">
+                        <h3>Retratos</h3>
+                        <div class="overlay">Ensaio fotográfico que revela a sua essência.</div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="imagens/eventos corporativos 2.jpg" alt="Eventos Corporativos">
+                        <h3>Eventos Corporativos</h3>
+                        <div class="overlay">Fotos profissionais que destacam o seu evento.</div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="imagens/festa de aniversario.jpg" alt="Aniversários">
+                        <h3>Aniversários</h3>
+                        <div class="overlay">Memórias inesquecíveis de momentos especiais.</div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="imagens/book pessoal.jpg" alt="Book Pessoal">
+                        <h3>Book Pessoal</h3>
+                        <div class="overlay">Ensaio fotográfico exclusivo para registrar sua personalidade.</div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="imagens/fotografia comercial.jpg" alt="Fotografia Comercial">
+                        <h3>Fotografia Comercial</h3>
+                        <div class="overlay">Imagens de alta qualidade para o seu negócio.</div>
+                    </div>
         
-        <div class="contact-form">
-            <h2>Entre em Contato Agora!</h2>
-            <form>
-                <input type="text" id="name" placeholder="Seu Nome*" required>
-                <input type="email" id="email" placeholder="Email*" required>
-                <input type="text" id="subject" placeholder="Assunto*" required>
-                <textarea id="message" placeholder="Sua Mensagem" required></textarea>
-                <button type="submit">Enviar Mensagem <i class="fas fa-paper-plane"></i></button>
-            </form>
-        </div>
-    </section>
-]
+                    <!-- sEGUNDA sequência de imagens -->
+                    <div class="portfolio-item">
+                        <img src="imagens/casamento.jpeg" alt="Casamentos">
+                        <h3>Casamentos</h3>
+                        <div class="overlay">Capturando o amor e a emoção do seu grande dia.</div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="imagens/retratos.jpeg" alt="Retratos">
+                        <h3>Retratos</h3>
+                        <div class="overlay">Ensaio fotográfico que revela a sua essência.</div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="imagens/eventos corporativos 2.jpg" alt="Eventos Corporativos">
+                        <h3>Eventos Corporativos</h3>
+                        <div class="overlay">Fotos profissionais que destacam o seu evento.</div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="imagens/festa de aniversario.jpg" alt="Aniversários">
+                        <h3>Aniversários</h3>
+                        <div class="overlay">Memórias inesquecíveis de momentos especiais.</div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="imagens/book pessoal.jpg" alt="Book Pessoal">
+                        <h3>Book Pessoal</h3>
+                        <div class="overlay">Ensaio fotográfico exclusivo para registrar sua personalidade.</div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="imagens/fotografia comercial.jpg" alt="Fotografia Comercial">
+                        <h3>Fotografia Comercial</h3>
+                        <div class="overlay">Imagens de alta qualidade para o seu negócio.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                    
+        <section id="sobre">
+            <h2>Quem é João Silva?</h2>
+            <div id="sobre-mim">
+                <div id="texto">
+                    <p>Olá, sou João Silva, um fotógrafo apaixonado por capturar histórias autênticas e emocionantes. Desde cedo, a fotografia sempre foi minha paixão, e transformei esse amor em uma carreira onde cada clique busca imortalizar memórias únicas e criar algo inesquecível.</p>
+                    <p>Com vários anos de experiência, já trabalhei com clientes de todos os perfis, desde casamentos íntimos a grandes eventos corporativos. Acredito que a fotografia é uma forma de arte que revela a essência de cada momento e expressão.</p>
+                    <p>Minhas fotografias são inspiradas pela natureza, pela autenticidade de cada pessoa e pela história que cada cliente quer contar. Busco capturar os pequenos detalhes e criar um ambiente onde cada cliente se sinta confortável e autêntico diante da câmera.</p>
+                    <p>Para mim, a fotografia é uma arte que está sempre em evolução. Estou constantemente aprendendo novas técnicas e explorando novas perspectivas para oferecer o melhor resultado em cada projeto.</p>
+                </div>
+                <div id="sobre-img">
+                    <img src="imagens/sobre-mim.jpg" alt="João Silva">
+                </div>
+            </div>
+        </section>
+        
+        <section id="planos" >
+                <div id="precos">
+                    <h2>Escolha o Plano Ideal para Você</h2>
+                    <div id="container-precos">
+                        <div class="planos-card">
+                            <h3>Básico</h3>
+                            <p><strong>R$ 800</strong></p>
+                            <ul>
+                                <li>2 horas de sessão fotográfica</li>
+                                <li>10 fotos editadas em alta resolução</li>
+                                <li>Galeria online para download</li>
+                            </ul>
+                        </div>
+                        <div class="planos-card">
+                            <h3>Intermediário</h3>
+                            <p><strong>R$ 1.500</strong></p>
+                            <ul>
+                                <li>4 horas de sessão fotográfica</li>
+                                <li>20 fotos editadas em alta resolução</li>
+                                <li>Álbum fotográfico impresso</li>
+                                <li>Galeria online para download</li>
+                            </ul>
+                        </div>
+                        <div class="planos-card">
+                            <h3>Completo</h3>
+                            <p><strong>R$ 3.500</strong></p>
+                            <ul>
+                                <li>Sessão fotográfica ilimitada (duração do evento)</li>
+                                <li>50 fotos editadas em alta resolução</li>
+                                <li>Álbum fotográfico premium</li>
+                                <li>Galeria online para download</li>
+                                <li>DVD com todas as fotos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                        
+                <div id="depoimentos">
+                    <h2>Depoimentos de Clientes Satisfeitos</h2>
+                    <div id="container-carrossel-depoimentos">
+                        <div id="carrossel-depoimentos">
+                            <div class="item-depoimento">
+                                <img src="imagens/cliente1.jpeg" alt="Foto de Maria F.">
+                                <h4>Maria F.</h4>
+                                <p>"As fotos do meu casamento ficaram incríveis! João capturou cada momento especial. Recomendo!"</p>
+                            </div>
+                            <div class="item-depoimento">
+                                <img src="imagens/cliente2.jpeg" alt="Foto de Carlos S.">
+                                <h4>Carlos S.</h4>
+                                <p>"João fez um trabalho maravilhoso com as fotos da minha empresa. Elas ficaram profissionais e elegantes."</p>
+                            </div>
+                            <div class="item-depoimento">
+                                <img src="imagens/cliente3.jpeg" alt="Foto de Ana P.">
+                                <h4>Ana P.</h4>
+                                <p>"Adorei as fotos do meu aniversário! João tem um olhar único para detalhes."</p>
+                            </div>
+                            <div class="item-depoimento">
+                                <img src="imagens/cliente4.jpeg" alt="Foto de Roberto M.">
+                                <h4>Roberto M.</h4>
+                                <p>"Nunca me senti tão à vontade em uma sessão de fotos. João é muito profissional e talentoso."</p>
+                            </div>
+                            <div class="item-depoimento">
+                                <img src="imagens/cliente5.jpeg" alt="Foto de Elisa G.">
+                                <h4>Elisa G.</h4>
+                                <p>"As fotos da minha família ficaram perfeitas. Um trabalho impecável!"</p>
+                            </div>
+                            <div class="item-depoimento">
+                                <img src="imagens/cliente6.jpeg" alt="Foto de Bruno T.">
+                                <h4>Bruno T.</h4>
+                                <p>"João capturou a essência do nosso evento. As fotos ficaram lindas!"</p>
+                            </div>
+                            <div class="item-depoimento">
+                                <img src="imagens/cliente7.jpg" alt="Foto de Camila R.">
+                                <h4>Camila R.</h4>
+                                <p>"Estou encantada com as fotos do meu ensaio. Elas são verdadeiras obras de arte!"</p>
+                            </div>
+                            <div class="item-depoimento">
+                                <img src="imagens/cliente8.jpg" alt="Foto de Fernanda L.">
+                                <h4>Fernanda L.</h4>
+                                <p>"Excelente fotógrafo! João conseguiu captar exatamente o que eu queria."</p>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                
+        </section>
+        
+        <section id="contato">
+            <div class="info-contato">
+                <h2>Vamos Conversar?</h2>
+                <p>Entre em contato através do formulário abaixo e acompanhe meu trabalho nas redes sociais para ver os últimos projetos e novidades.</p>
+                   
+                <div class="carrossel-social">
+                    <ul class="links-sociais">
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="formulario-contato">
+                <h2>Entre em Contato Agora!</h2>
+                <form>
+                    <input type="text" id="nome" placeholder="Seu Nome*" required>
+                    <input type="email" id="email" placeholder="Email*" required>
+                    <input type="text" id="assunto" placeholder="Assunto*" required>
+                    <textarea id="mensagem" placeholder="Sua Mensagem" required></textarea>
+                    <button type="submit">Enviar Mensagem <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+            </main>
 
-    <footer class="footer">
-        <p>&copy; 2023 João Silva Fotografia. Todos os direitos reservados.</p>
+    <footer>
+
     </footer>
 
-    <button class="back-to-top" onclick="scrollToHome()">↑</button>
-
-
-<!-- CHAT -->
-<button class="chat-button" onclick="toggleChatPopup()" aria-label="Abrir chat de ajuda">💬</button>
-
-
-<div class="chat-popup" id="chatPopup">
-    <div class="chat-header">
-        <button onclick="toggleChatPopup()" class="close-chat">←</button>
-        <div class="chat-info">
-            <img src="imagens/cliente1.jpeg" alt="Avatar do Chat" class="chat-avatar">
-            <div class="chat-details">
-                <h3>Assistente Virtual</h3>
-                <small>Online</small>
-            </div>
-        </div>
-        <button class="more-options">⋮</button>
-    </div>
-    <div class="chat-body">
-        <p class="bot-message">Oi! Em que posso lhe ajudar?</p>
-    </div>
-    <div class="chat-footer">
-        <button class="chat-now-button" onclick="showForm()">Iniciar Chat</button>
-        <div class="form-container" id="formContainer" style="display: none;">
-            <form>
-                <label for="name">Nome:</label>
-                <input type="text" id="name" placeholder="Digite seu nome" required>
-                
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" placeholder="Digite seu e-mail" required>
-                
-                <button type="submit">Iniciar o chat</button>
-            </form>
-        </div>
-        <small>Desenvolvido por <strong>LiveChat</strong></small>
-    </div>
-</div>
-
-<script src="js/script.js"></script>
 
 </body>
 </html>

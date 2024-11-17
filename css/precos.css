@@ -1,4 +1,4 @@
-.combined-section {
+#planos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,18 +8,18 @@
     box-sizing: border-box;
 }
 
-.pricing-section {
+#precos {
     text-align: center;
     width: 100%;
 }
 
-.pricing-section h2 {
+#precos h2 {
     font-size: 2.5rem;
     color: #4a4a8a;
     margin-bottom: 2rem;
 }
 
-.pricing-container {
+#container-precos {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
@@ -27,7 +27,7 @@
     margin: 0 auto;
 }
 
-.pricing-card {
+.planos-card {
     flex: 1;
     background-color: #ffffff;
     border-radius: 10px;
@@ -38,64 +38,64 @@
     cursor: pointer;
 }
 
-.pricing-card h3 {
+.planos-card h3 {
     color: #4a4a8a;
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
-.pricing-card p {
+.planos-card p {
     font-size: 2rem;
     color: #333;
     margin: 1rem 0;
 }
 
-.pricing-card ul {
+.planos-card ul {
     list-style: none;
     padding: 0;
     font-size: 1rem;
     color: #555;
 }
 
-.pricing-card:hover {
+.planos-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     background-color: #f4eaff;
 }
 
-.pricing-card:hover h3,
-.pricing-card:hover p,
-.pricing-card:hover ul {
+.planos-card:hover h3,
+.planos-card:hover p,
+.planos-card:hover ul {
     color: #000;
 }
 
 /* DEPOIMENTOS */
-.testimonials-section {
+#depoimentos {
     text-align: center;
     width: 100%;
     margin-top: 7rem;
 }
 
-.testimonials-section h2 {
+#depoimentos h2 {
     font-size: 2.5rem;
     color: #4a4a8a;
     margin-bottom: 2rem;
 }
 
-.testimonials-carousel-container {
+#container-carrossel-depoimentos {
     overflow: hidden;
     width: 100%;
-    max-width: calc(100%);
+    max-width: 100%;
 }
 
-.testimonials-carousel {
+#carrossel-depoimentos {
     display: flex;
     gap: 2rem;
-    animation: scrollTestimonials 30s linear infinite;
+    animation: rolarDepoimentos 30s linear infinite;
     width: 200%;
 }
 
-.testimonial-item {
+.item-depoimento {
     flex: 0 0 25%;
     background-color: #e7e3f5;
     border-radius: 10px;
@@ -107,12 +107,12 @@
     color: #4a4a8a;
 }
 
-.testimonial-item:hover {
+.item-depoimento:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.testimonial-item img {
+.item-depoimento img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -122,7 +122,7 @@
     margin-right: auto;
 }
 
-.testimonial-item h4 {
+.item-depoimento h4 {
     font-size: 1.1rem;
     font-weight: bold;
     color: #4a4a8a;
@@ -130,7 +130,7 @@
     margin-top: 0.5rem;
 }
 
-.testimonial-item p {
+.item-depoimento p {
     font-size: 1rem;
     color: #555;
     font-style: italic;
@@ -139,21 +139,20 @@
 }
 
 /* ROLAGEM */
-@keyframes scrollTestimonials {
+@keyframes rolarDepoimentos {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
 }
 
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
-    .pricing-container, .testimonials-carousel {
+    #container-carrossel-depoimentos, #carrossel-depoimentos {
         flex-direction: column;
         width: 100%;
         animation: none;
     }
-    .testimonial-item, .pricing-card {
+    .item-depoimento {
         max-width: 100%;
         margin-bottom: 1rem;
     }
 }
-

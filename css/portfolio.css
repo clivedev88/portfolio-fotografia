@@ -1,4 +1,4 @@
-.portfolio-section {
+#portfolio {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -8,25 +8,25 @@
     text-align: center;
 }
 
-.portfolio-section h1 {
+#portfolio h1 {
     font-size: 4rem;
     color: #4a4a8a;
 }
 
-.portfolio-section p {
+#portfolio p {
     font-size: 2rem;
     color: #666;
     margin-bottom: 2rem;
 }
 
 /* CARROSSEL */
-.carousel-container {
+#container-carrossel {
     overflow: hidden;
     width: 100%;
     max-width: calc(100% - 14rem); 
 }
 
-.portfolio-carousel {
+#carrossel-portfolio {
     display: flex;
     gap: 2rem;
     animation: scroll 30s linear infinite;
@@ -84,4 +84,3 @@
     0% { transform: translateX(0); }
     100% { transform: translateX(-185%); }
 }
-

@@ -1,4 +1,4 @@
-.intro-section {
+#home {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -7,23 +7,23 @@
     color: #333;
 }
 
-.intro-content {
+#intro {
     max-width: 40%;
 }
 
-.subtitle {
+#sub-titulo {
     color: #6e6b99;
     font-size: 2rem;
     font-weight: 600;
 }
 
-.intro-content h1 {
+#intro h1 {
     font-size: 5rem;
     color: #4a4a8a;
     margin: 0.5rem 0;
 }
 
-.description {
+#descricao {
     color: #666;
     margin: 1rem 0;
     font-size: 1.4rem;
@@ -31,13 +31,13 @@
     text-align: justify;
 }
 
-.buttons {
+#buttons {
     display: flex;
     gap: 2rem;
     margin-top: 1.5rem;
 }
 
-.primary-button, .secondary-button {
+#contato-btn, #portfolio-btn {
     padding: 0.85rem 1.75rem;
     border-radius: 5px;
     font-size: 1.2rem;
@@ -48,50 +48,50 @@
     transition: background-color 1s, color 1s;
 }
 
-.primary-button {
+#contato-btn {
     background-color: #4a4a8a;
     color: white;
     border: none;
 }
 
-.secondary-button {
+#portfolio-btn {
     background-color: transparent;
     color: #4a4a8a;
     border: 1px solid #4a4a8a;
 }
 
-.primary-button:hover {
+#contato-btn:hover {
     background-color: white;
     color: #4a4a8a;
     border: 1px solid #4a4a8a;
 }
 
-.secondary-button:hover {
+#portfolio-btn:hover {
     background-color: #4a4a8a;
     color: white;
     border: none;
 }
 
-.primary-button:hover, .secondary-button:hover {
+#contato-btn:hover, #portfolio-btn:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
 
-.client-info {
+#info-cliente {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     margin-top: 1.5rem;
 }
 
-.client-img {
+.img-cliente {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.happy-clients {
+#clientes {
     font-size: 1.5rem;
     color: #4a4a8a;
     font-weight: 700;
@@ -116,8 +116,8 @@
     color: #1769ff; 
 }
 
-.social-icons a:hover .fa-x-twitter {
-    color: #1DA1F2; 
+.social-icons a:hover .fa-x  {
+    color: #ffffff; 
 }
 
 .social-icons a:hover .fa-tiktok {
@@ -128,7 +128,7 @@
     color: #E1306C; 
 }
 
-.intro-image img {
+#perfil img {
     width: 100%;
     max-width: 500px;
     border-radius: 10px;
