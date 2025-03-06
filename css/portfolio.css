@@ -19,7 +19,6 @@
     margin-bottom: 2rem;
 }
 
-/* CARROSSEL */
 #container-carrossel {
     overflow: hidden;
     width: 100%;
@@ -79,7 +78,6 @@
     opacity: 1;
 }
 
-/* ROLAGEM */
 @keyframes scroll {
     0% { transform: translateX(0); }
     100% { transform: translateX(-185%); }
