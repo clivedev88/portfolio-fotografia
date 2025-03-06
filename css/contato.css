@@ -27,7 +27,6 @@
     text-align: justify;
 }
 
-/* FORMULÁRIO */
 .formulario-contato {
     flex: 1;
     max-width: 45%;
@@ -74,7 +73,6 @@
 }
 
 
-/* CARROSSEL SOCIAL */
 .carrossel-social {
     position: relative;
     width: 200px;
@@ -132,7 +130,6 @@
     animation-play-state: paused;
 }
 
-/* ANIMAÇÃO DE ROTAÇÃO */
 @keyframes rotacao-carrossel {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
