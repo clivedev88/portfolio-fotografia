@@ -69,7 +69,6 @@
     color: #000;
 }
 
-/* DEPOIMENTOS */
 #depoimentos {
     text-align: center;
     width: 100%;
@@ -138,13 +137,11 @@
     text-align: center;
 }
 
-/* ROLAGEM */
 @keyframes rolarDepoimentos {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
 }
 
-/* RESPONSIVIDADE */
 @media (max-width: 768px) {
     #container-carrossel-depoimentos, #carrossel-depoimentos {
         flex-direction: column;
